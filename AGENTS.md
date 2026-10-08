@@ -1,6 +1,10 @@
 # Agent entry point
 
-This game-development branch uses a layered Markdown workflow. Read selectively; links are routes, not a request to load everything.
+This reusable baseline uses a layered Markdown workflow. Read selectively; links are routes, not a request to load everything.
+
+## Editing the baseline
+
+For explicit requests to maintain this reusable template, keep `project/` uninitialized and its indexes empty. Use conversation or temporary handoffs outside the repository; do not record template work as project history. Actual project work uses the lifecycle below, including setup.
 
 ## Start
 

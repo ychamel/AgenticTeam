@@ -2,6 +2,8 @@
 
 Audience: coordinator and assigned curator. Maintenance is triggered by work, not a background service.
 
+When maintaining the reusable template itself, follow [the baseline-editing rule](../AGENTS.md#editing-the-baseline). Leave project identity and runtime bindings uninitialized, indexes empty, and counters at zero. Keep that work's task/handoff records outside the template; do not ship local paths, session identities, or execution history. The project lifecycle below applies after adoption.
+
 ## Stable and changeable layers
 
 `team/foundation.md` is immutable during ordinary tasks. Root routing and `team/` processes, roles, and templates are versioned baseline material. Put project facts, command choices, model bindings, and local conventions in `project/`. Do not solve local exceptions by quietly weakening a general rule.

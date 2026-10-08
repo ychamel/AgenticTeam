@@ -1,6 +1,6 @@
-# AgenticTeam — game development
+# Game development baseline
 
-A Markdown baseline for game repositories worked on by coding agents. The `game-development` branch specializes the general baseline on `main` for playable slices, engine systems, content integration, performance, and player experience. It stays engine-agnostic and loads only the context needed for the assigned work.
+A reusable Markdown baseline for new game projects, covering playable slices, engine systems, content integration, performance, and player experience. It stays engine-agnostic and loads only the context needed for the assigned work. Project identity, facts, model bindings, tasks, and decisions are initialized only when adopted for an actual project.
 
 Start with [setup](docs/SETUP.md). Agents start at [AGENTS.md](AGENTS.md).
 

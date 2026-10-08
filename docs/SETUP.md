@@ -1,10 +1,10 @@
 # Adopt the game-development baseline
 
-Read during initial setup or migration, not at every task start. Use the `game-development` branch for this profile; `main` retains the general baseline. The five `project/*.md` files describe the destination game; its facts and model bindings are intentionally uninitialized. Template-maintenance records in `project/archive/` are historical evidence, not destination project context.
+Read during initial setup or migration, not at every task start. The five `project/*.md` files describe the destination game; its identity, facts, and model bindings are intentionally uninitialized. Task and decision indexes are empty, maintenance counters start at zero, and no project history is included.
 
 ## New repository
 
-1. Copy `AGENTS.md`, `team/`, and the five top-level `project/*.md` files into the destination root. Also copy `docs/SETUP.md`, `docs/DESIGN.md`, and `docs/EXAMPLE.md` so reference links resolve. Exclude this template's task/archive history; reset WORK's maintenance date/count and clear any construction-only rows. Keep the destination's product README; this template's README is optional.
+1. Copy `AGENTS.md`, `team/`, and the five top-level `project/*.md` files into the destination root. Also copy `docs/SETUP.md`, `docs/DESIGN.md`, and `docs/EXAMPLE.md` so reference links resolve. Keep the destination's product README; this template's README is optional.
 2. Ask the agent to initialize the project context using the prompt below. It should inspect only relevant manifests, entry points, CI, and existing documentation, or use your stated requirements for an empty project.
 3. Fill BRIEF with game pillars, core loop, engine/toolchain, target platforms/input, and agreed budgets. Fill MAP with real code, scene/asset, import, test, and build entry points. RUNTIME holds agent capabilities and models. WORK and DECISIONS start empty. Unknown facts stay explicit; do not invent a frame-rate target or multiplayer requirement.
 4. Run a small real task. Verify that the agent reads the intended route, saves a handoff when delegated, and reports actual checks. A tiny local fix should not create a team of agents or a task directory.
@@ -29,16 +29,16 @@ Codex discovers `AGENTS.md` through its instruction chain, with directory-specif
 
 Codex supports subagents and model configuration in supported clients; exact controls depend on the host. Inspect the available spawn tool and model list before binding aliases. Set FAST to an available smaller model, STANDARD to a capable coding model, and STRONG to an available model appropriate for difficult reasoning. Configure or explicitly select the model at dispatch; a Markdown alias alone does not select it. See [official subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents).
 
-For a host exposing the same collaboration controls as the environment used to build this baseline, the mapping is:
+For hosts exposing these collaboration parameters, the mapping is:
 
 | Intent | Tool parameter / action |
 | --- | --- |
 | Fresh worker or partner | `spawn_agent` with `fork_turns: "none"` and a self-contained packet |
-| Smaller-model scout | Set the available `model` explicitly, e.g. `gpt-6-luna`, with supported effort |
+| Smaller-model scout | Set `model` to the locally bound FAST model, with supported effort |
 | Strong partner | Select the bound STRONG model, or inherit only its model setting while passing no conversation history |
 | Transfer ownership | Request stop, confirm stopped, inspect files, then issue a new assignment ID |
 
-These parameter names and the example model are specific to that host, not portable API promises. In other clients use their documented equivalents. Fresh conversation history can still include system or repository instructions; record the actual isolation limit. Read/write restrictions in Markdown are behavioral instructions unless the host enforces them. No runtime configuration is installed by this template.
+These parameter names are host-specific, not portable API promises. In other clients use their documented equivalents. Fresh conversation history can still include system or repository instructions; record the actual isolation limit. Read/write restrictions in Markdown are behavioral instructions unless the host enforces them. No runtime configuration is installed by this template.
 
 ## Other hosts and single-agent mode
 

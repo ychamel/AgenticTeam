@@ -2,6 +2,8 @@
 
 Audience: coordinator. Workers follow their packet and role; the coordinator carries this process.
 
+This lifecycle applies to actual projects. For explicit maintenance of the reusable template itself, follow [the baseline-editing rule](../AGENTS.md#editing-the-baseline) and keep starter project state pristine.
+
 For game tasks, read [the game profile](game-development.md) and pass applicable constraints to each assignment. Keep subjective design hypotheses separate from functional, content, performance, and observed-play evidence.
 
 ## 1. Frame before exploring

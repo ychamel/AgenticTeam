@@ -19,7 +19,7 @@ Small issues may stay in a row. Create a task only when investigation, multiple 
 ## Maintenance
 
 - Last wider context pass: none.
-- Completed standard/consequential tasks since that pass: 1.
+- Completed standard/consequential tasks since that pass: 0.
 - Known context drift requiring follow-up: none recorded.
 
 For lifecycle and interruption recovery, see [workflow](../team/workflow.md). For pruning triggers, see [maintenance](../team/maintenance.md).
