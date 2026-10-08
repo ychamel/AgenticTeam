@@ -1,6 +1,6 @@
 # Design notes
 
-Foundation: 1.0.0. Game profile: 1.1.0. These are explanations for maintainers, not another layer every agent must read.
+Foundation: 1.0.0. Game profile: 1.2.0. These are explanations for maintainers, not another layer every agent must read.
 
 ## Game-development profile
 
@@ -12,15 +12,15 @@ Shared scene files, imported metadata, and editor/build outputs add ownership ri
 
 The game profile builds on the shared foundation, task lifecycle, and model aliases. The four specialist guides are loaded only when selected. The small-task path remains available. The profile imposes no engine, genre, multiplayer requirement, or fixed resource budget.
 
-## Layered design experiment
+## Branching exploration and layered specification
 
-Profile 1.1.0 adds optional [design decomposition](../team/design-decomposition.md) for broad game goals, interacting systems, and observed detail loss. Its aim is to preserve product intent while resolving bounded implementation assignments. This is a hypothesis about quality and coordination cost, not a measured improvement.
+Profile 1.2.0 combines [branching exploration](../team/design-exploration.md) with [design decomposition](../team/design-decomposition.md). Independent designers develop concrete competing concepts before the coordinator narrows the solution. Shortlisted concepts branch on consequential questions, then exchange discoveries. The synthesis selects a coherent primary design and traces compatible contributions, adaptations, and rejected ideas to source proposals. A fresh reviewer challenges the combined feature. Quality and coordination benefits remain hypotheses to evaluate in real use.
 
 A compact coverage map connects player outcomes to behavior, presentation, content depth, acceptance, and evidence. Delivery scope and evidence state are separate: a verified first slice does not imply that later scope exists. Simplifications name their effect and authority. Decision layers describe experience, behavior, shared contracts, implementation, and evaluation; playable slices exercise them together.
 
-Only the next slice and critical dependencies receive detailed specification. Workers inherit relevant decisions and parent intent, with routine choices allowed inside explicit boundaries. A stronger coordinator/designer resolves ambiguous mechanics and integration, while objective bounded work can use FAST. The protocol neither increases a model's inherent capability nor guarantees savings.
+The complete agreed feature receives behavior, feedback, interaction, failure/recovery, and acceptance specifications before design readiness. Broader project ideas can remain coverage rows. Only code-level work is restricted to the next delivery slice. Workers inherit relevant decisions and parent intent, with routine choices allowed inside explicit boundaries. A stronger coordinator/designer resolves ambiguous concepts and synthesis; objective evidence gathering and bounded implementation can use FAST. The protocol neither increases a model's inherent capability nor guarantees savings.
 
-One canonical design record is created on demand and linked through existing records. No new permanent role, index, scheduler, mandatory task per layer, or initialized project data is introduced. Small local changes bypass decomposition. Existing projects can keep equivalent canonical design docs; the unchanged foundation remains compatible. [The comparison guide](TRIAL.md) covers quality, omissions, escalation, and overhead. Remove or narrow process that trials show has no useful consumer.
+One canonical design record holds the brief, comparison, synthesis, and specifications. Branch proposals live under the owning task and double as handoffs; scheduling stays in the task. Readers follow only relevant source links, and builders receive accepted contracts. Defaults cap breadth, depth, and assignments; parent revision changes invalidate dependent proposals. No new permanent role, index, scheduler, or initialized project data is introduced. Small local changes bypass exploration. Existing canonical docs can supply equivalent records; the foundation is unchanged. [The comparison guide](TRIAL.md) covers alternatives, synthesis, omissions, and overhead. Narrow process that has no useful consumer.
 
 ## Design choices
 
@@ -28,6 +28,8 @@ One canonical design record is created on demand and linked through existing rec
 | --- | --- | --- |
 | Important rules get lost in long prompts | Small root router plus shared foundation | Requires disciplined routing and actual reads |
 | Broad game goals lose defining details | Coverage IDs, bounded behavior specifications, integrated scenarios | More design work; benefit must be compared with overhead |
+| The first plausible solution crowds out alternatives | Neutral brief, independent concepts, comparison before commitment | Requires extra design effort for material uncertainty |
+| Individually attractive ideas conflict when combined | One primary concept, source-traced adaptations, integrated scenario review | Some good ideas remain intentionally unselected |
 | Every worker inherits irrelevant history | Fresh assignment packets and one role | Coordinator must include relevant cross-cutting constraints |
 | Too much work lands on the expensive model | Capability aliases with bounded FAST tasks | Savings depend on host support and escalation rates |
 | The main agent anchors on its first idea | Context-isolated STRONG partner before consequential choices | Neutral framing still contains the driver's assumptions |
@@ -68,4 +70,4 @@ This is a behavioral protocol, not an orchestration engine. It cannot guarantee 
 
 Word targets are starting heuristics, not measured token guarantees. Do not split a coherent rule across many tiny files merely to satisfy a budget. Prefer pruning duplication, linking evidence, and giving workers bounded questions. Add files or roles only when repeated work demonstrates a distinct consumer and ownership boundary.
 
-Foundation 1.0.0 establishes the initial contract. Profile 1.1.0 adds the compatible design-decomposition experiment described above. Future revisions record their purpose and compatibility impact here, keeping historical detail in version control rather than growing the agent entry point.
+Foundation 1.0.0 supplies the shared contract. Profile 1.2.0 adds branching exploration and whole-feature readiness to the compatible decomposition flow. Existing accepted designs need no retroactive exploration; reopened material questions can use the new flow. Future revisions record purpose and compatibility impact here, keeping historical detail in version control rather than growing the agent entry point.

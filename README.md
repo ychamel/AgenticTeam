@@ -25,9 +25,10 @@ Archives, other roles, and unrelated decisions stay out of default context.
 | [AGENTS.md](AGENTS.md) | Entry point and reading routes | Baseline revision |
 | [team/foundation.md](team/foundation.md) | Quality, evidence, collaboration, completion | Stable during ordinary work |
 | [team/game-development.md](team/game-development.md) | Player outcomes, content ownership, game-specific validation | Versioned game profile |
+| [team/design-exploration.md](team/design-exploration.md) | Independent concepts, deeper branches, comparison, and synthesis | Coordinator/designer; for new or unresolved features |
 | [team/design-decomposition.md](team/design-decomposition.md) | Preserve broad design coverage and resolve bounded implementation | Coordinator/designer; activated when needed |
 | `team/` process guides and [roles](team/roles/) | Workflow, dispatch, maintenance, focused responsibilities | Deliberate baseline updates |
-| [team/templates/](team/templates/) | Task, handoff, design, decision, and area forms | Copy only when needed |
+| [team/templates/](team/templates/) | Task, handoff, design, branch proposal, decision, and area forms | Copy only when needed |
 | [project/BRIEF.md](project/BRIEF.md), [MAP.md](project/MAP.md) | Project purpose, boundaries, locations, commands | Verified project facts |
 | [project/WORK.md](project/WORK.md), [DECISIONS.md](project/DECISIONS.md) | Compact routing indexes | Coordinator-owned updates |
 | [project/RUNTIME.md](project/RUNTIME.md) | Model aliases and observed host capabilities | Per environment |
@@ -56,9 +57,30 @@ These are eleven available responsibilities. Activate only the useful ones: a tu
 
 Minor fixes use a short path. Resumable or delegated work gets one task directory with separate, exclusively owned handoffs. Consequential choices become decision records; completed work leaves the active index. [The worked example](docs/EXAMPLE.md) shows delegation, a design challenge, interruption recovery, and closeout.
 
-Broad game requests use a compact design coverage record before dispatch. It keeps defining behavior, feedback, content differences, omissions, and later scope visible while specifying only the next playable slice. Workers receive relevant decisions and contracts; integrated checks assess those details together. A finished slice remains an intermediate milestone until the requested scope is satisfied or explicitly revised. Clear local changes need no design record or extra role.
+New nontrivial features begin with independent alternatives before implementation is decomposed. Designers receive the same neutral brief without the coordinator's favored solution or other proposals. The coordinator compares the completed concepts, deepens consequential questions, exchanges useful discoveries, and assembles a coherent detailed design. A fresh reviewer challenges missing behavior and incompatible assumptions before implementation readiness.
 
-This branch is an experiment in preserving detail with bounded assignments. Quality and coordination cost remain unmeasured; [the comparison guide](docs/TRIAL.md) describes how to compare it with the previous workflow and capture actionable feedback.
+```mermaid
+flowchart TD
+    R[Neutral outcomes, constraints, criteria] --> A[Independent concept A]
+    R --> B[Independent concept B]
+    R --> C[Independent concept C]
+    A --> K[Compare all proposals]
+    B --> K
+    C --> K
+    K --> D[Deepen a consequential variant]
+    K --> E[Resolve an interacting facet]
+    D --> X[Exchange discoveries and reconcile contracts]
+    E --> X
+    X --> S[One complete feature design]
+    S --> Q[Independent challenge and readiness check]
+    Q --> I[Implement in bounded slices]
+```
+
+Defaults bound exploration to three concepts, at most two shortlisted parents with two children each, and eight design assignments including the final challenge. The coordinator can adjust that budget for a specific unresolved decision. A branch artifact also serves as its handoff; builders receive accepted decisions rather than every proposal. No additional permanent roles are required.
+
+Coverage records retain defining behavior, feedback, content differences, omissions, and later scope. Specify the whole agreed feature before design readiness, then detail coding assignments for the next playable slice. A finished slice remains an intermediate milestone until the requested scope is satisfied or explicitly revised. Clear local changes need no design record or exploration tree.
+
+Quality and coordination cost require evaluation in actual projects. [The comparison guide](docs/TRIAL.md) explains how to compare workflow approaches and capture actionable feedback; the template itself makes no measured improvement claim.
 
 “Automatic” means the instructions require agents to update records at milestones and before yielding. Markdown does not run a scheduler, choose a model by itself, enforce access controls, or guarantee a write after a crash. Multi-agent execution, cheaper models, and context isolation depend on host support; the framework defines explicit fallbacks. Codex-specific setup follows [official instruction-loading](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents).
 

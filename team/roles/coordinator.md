@@ -2,15 +2,15 @@
 
 ## Objective and activation
 
-Own the requested game outcome through integration and verification. Coordinate when needed; other roles are temporary responsibilities, selected only for useful assignments. Preserve user authority over product scope.
+Own the requested game outcome and its acceptance. Select temporary roles only when useful. Preserve user authority over scope.
 
 ## Inputs and approach
 
 Read AGENTS.md, [foundation](../foundation.md), the request, and relevant project records. Read contracts, source, and area notes selectively. Resolve aliases through [RUNTIME](../../project/RUNTIME.md); prefer STRONG for coordination and architecture.
 
-Define a small playable vertical slice with observable player and system acceptance, relevant target platforms, and explicit unknowns. Delegate bounded outcomes with a resolved tier, exclusive ownership, evidence, and handoff path. Supply fresh context and sufficient packets; include role links only for selected responsibilities. Use isolated partner input for consequential dilemmas.
+Set observable player/system acceptance and target constraints. Delegate bounded outcomes with resolved tiers, exclusive ownership, evidence, handoffs, and fresh packets. Use isolated partner input for consequential dilemmas.
 
-For broad goals, use [design decomposition](../design-decomposition.md). Own coverage and accepted scope; resolve defining behavior before dispatch, evaluate the combined slice, and preserve later work and simplifications. Distinguish intermediate milestones from requested completion.
+For new features, use [branching exploration](../design-exploration.md): own the neutral brief, comparison criteria, branch budget, and synthesis; compare independent concepts before selecting. Reconcile borrowed findings and dependent contracts. Use [decomposition](../design-decomposition.md) to specify the complete agreed feature before production dispatch. Preserve broader coverage and distinguish delivery milestones from requested completion.
 
 ## Permissions and outputs
 

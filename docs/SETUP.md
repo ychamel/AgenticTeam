@@ -15,7 +15,7 @@ Example bootstrap request:
 
 For a truly new game, include the player experience, core loop, intended platforms, constraints, and preferred engine if known. The agent can begin a small authorized prototype while clarifying consequential unknowns. Keep uncertain mechanics as hypotheses and request real play observations when acceptance needs them.
 
-Broad requests activate [design decomposition](../team/design-decomposition.md) after framing and relevant discovery. Create detailed project design records only for actual project work, link them from existing context, and preserve requested scope beyond the first slice. Do not initialize design records while maintaining this reusable template. A clear tuning fix still needs no design record.
+New nontrivial features activate [branching exploration](../team/design-exploration.md) from a neutral brief before selecting a concept. Use [decomposition](../team/design-decomposition.md) to preserve coverage and specify the complete agreed feature before sequencing implementation. Create canonical designs and task-local branch handoffs only for actual project work; link them from existing context. Keep broader requested scope actively owned beyond the first slice. Do not initialize design or branch records while maintaining this template. A clear tuning fix still needs no design record.
 
 ## Existing repository
 
@@ -48,4 +48,4 @@ Point the host's native instruction entry point at AGENTS.md or include its smal
 
 ## Baseline updates
 
-Compare the adopted foundation and game-profile versions with the versions you want to adopt. Review changes to AGENTS and `team/`; retain project context and runtime bindings. Profile 1.1.0 adds optional design decomposition on unchanged foundation 1.0.0. Existing canonical design docs can substitute for the new template. Apply compatible updates as a deliberate change, inspect local instruction conflicts, and try one representative playable-slice task. Do not overwrite `project/` with empty starter files during an upgrade. See [maintenance](../team/maintenance.md).
+Compare the adopted foundation and game-profile versions with the versions you want to adopt. Review changes to AGENTS and `team/`; retain project context and runtime bindings. Profile 1.2.0 adds bounded concept exploration, branch handoffs, and complete-feature readiness on unchanged foundation 1.0.0. Existing accepted designs remain usable; apply exploration to new features or reopened material questions. Equivalent canonical design docs can substitute for the templates. Inspect local instruction conflicts and try a representative task. Do not overwrite `project/` with empty starter files during an upgrade. See [maintenance](../team/maintenance.md).

@@ -2,9 +2,11 @@
 
 Audience: coordinator and assigned game designer. Activate for broad game requests, interacting new systems, or missing detail that threatens the intended experience. Skip this guide and its record for clear local changes governed by existing contracts. This adds no required role or separate task per layer.
 
+When a feature has no accepted design, use [branching exploration](design-exploration.md) before selecting an approach. Preserve requested coverage while comparing independent concepts; decomposing the first idea is not sufficient exploration. This guide turns the synthesis into complete feature specifications and bounded implementation work.
+
 ## Preserve coverage before narrowing delivery
 
-Read the relevant request, BRIEF, contracts, and evidence. Identify the defining player outcomes and the behaviors, feedback, content variety, and interactions that support them. Keep a short map of meaningful facets; expand details needed by the next slice or likely to be lost. Do not enumerate an entire reference game's content or invent requirements to fill categories.
+Read the relevant request, BRIEF, contracts, and evidence. Identify defining player outcomes and the behaviors, feedback, content variety, and interactions that support them. Keep a short map of meaningful facets; detail the agreed feature and critical dependencies. Broader project ideas can remain coverage rows. Do not enumerate an entire reference game's content or invent requirements to fill categories.
 
 Distinguish requested requirements, accepted decisions, provisional choices, and unknowns. A named reference game is a starting point for clarifying desired qualities, not a complete specification. Resolve critical ambiguity with the product owner; use authorized, reversible prototypes to explore other unknowns without claiming fidelity.
 
@@ -12,17 +14,17 @@ For standard/consequential work, create one bounded `project/design/<slug>.md` f
 
 Assign stable IDs to outcomes worth tracking. Separate delivery scope (`current`, `later`, `excluded`) from evidence state (`unresolved`, `specified`, `implemented`, `verified`). Record simplifications with their effect on the requested quality and authority. Deferred work remains visible; committed follow-ups need an owner and next action. An intermediate slice does not complete the whole request. Reducing requested outcomes needs acceptance from the user or delegated product owner; routine choices within existing authority proceed normally.
 
-## Resolve the next slice by decision layer
+## Specify the feature by decision layer
 
-| Layer | Resolve only what the slice needs |
+| Layer | Resolve for the agreed feature |
 | --- | --- |
 | Experience | Player outcomes and observable qualities; label subjective hypotheses |
 | Behavior | Rules, state transitions, tuning assumptions, feedback, failure cases, and defining content differences |
 | Shared contracts | Dependencies, state/timing ownership, interface semantics, identifiers, and relevant compatibility constraints |
-| Implementation | Coherent assignments with acceptance, permitted decisions, exclusive paths, and enough parent context |
+| Implementation | Next-slice assignments with acceptance, permitted decisions, exclusive paths, and parent context |
 | Evaluation | Functional checks plus relevant content, integrated scenario, and observed-play evidence |
 
-Layers organize decisions; playable slices organize delivery. Select a small end-to-end loop that exercises important interactions, including presentation and content when they are part of its acceptance. Preserve the remaining coverage map. Detail other systems only as dependencies or evidence require it. Revisit affected decisions after prototypes; do not freeze uncertain tuning as architecture.
+Layers organize decisions; playable slices organize delivery. Specify behavior and interactions throughout the agreed feature before declaring its design ready, including later delivery slices. Select a small end-to-end implementation loop exercising important interactions, presentation, and content. Preserve broader project coverage without exhaustively specifying unrelated future systems. Revisit affected decisions after prototypes; do not freeze uncertain tuning as architecture.
 
 If the request spans slices, retain an active owning task/WORK row with the next slice or concrete blocker until the requested outcome is complete, explicitly revised, or paused by the user. Reuse that task when practical. Closing a child slice must transfer outstanding requested work to an active owner; a later-scope row alone is not that handoff.
 
@@ -30,7 +32,7 @@ If the request spans slices, retain an active owning task/WORK row with the next
 
 Use [dispatch](dispatch.md). Each packet carries relevant outcome IDs, accepted behavior or source excerpts, interface dependencies, success/failure examples, and decision boundaries. Include enough parent intent to judge a local choice without loading the whole design record.
 
-FAST assignments need objective acceptance and established behavior/contracts. Send unresolved mechanics or coupling to the coordinator/designer or a stronger tier first. Split work at coherent behavior and ownership boundaries; avoid one task per function or so many fragments that integration dominates. Workers flag missing decisions affecting experience or shared contracts rather than silently simplifying them. Ordinary implementation choices inside the packet remain theirs.
+FAST implementation assignments need objective acceptance and established behavior/contracts. Send unresolved mechanics or coupling to the coordinator/designer or a stronger tier first. Before dispatching builders, apply the [design readiness check](design-exploration.md#6-challenge-and-check-readiness). Split work at coherent behavior and ownership boundaries; avoid one task per function or excessive fragments. Workers flag missing decisions affecting experience or shared contracts rather than silently simplifying them. Ordinary implementation choices inside the packet remain theirs.
 
 ## Evaluate detail and integration
 

@@ -24,7 +24,7 @@ Promote a small task to standard before delegating, suspending with unfinished c
 
 For small work, proceed directly from framing to the edit, proportionate verification, updates to any changed canonical facts, and final reporting. The task-record, assignment, checkpoint-file, and archival steps below apply to standard/consequential work only.
 
-For broad game requests or interacting new systems, apply [design decomposition](design-decomposition.md): preserve requested coverage, then resolve the next slice's behavior and shared contracts. Create or link its design record with resumable state below; refine decisions using discovery evidence. A clear local change needs no design record. Keep the requested outcome distinct from an intermediate slice's acceptance.
+For new nontrivial features without an accepted design, activate [branching exploration](design-exploration.md) before choosing a concept. For broad goals, use [decomposition](design-decomposition.md) to preserve coverage and specify the whole agreed feature; only implementation assignments narrow to the next slice. Create or link the canonical design with resumable state below. A clear local change needs no design record. Keep requested completion distinct from an intermediate slice's acceptance.
 
 ## 2. Establish resumable state
 
@@ -38,9 +38,11 @@ One coordinator owns the task and shared indexes. Record each assignment's owner
 
 Have a scout locate relevant code, constraints, and checks when that saves main-context work. Ask a partner to challenge the neutral framing before committing to a consequential direction. Consult area notes and accepted decisions only for the affected scope. Confirm decision-critical summaries against sources.
 
+When exploration is active, the coordinator dispatches independent concepts from one neutral brief, compares the completed round, authorizes useful deeper branches, and synthesizes compatible findings. A compact branch record serves as that assignment's handoff. Do not start production implementation before the synthesized feature passes its readiness check; bounded prototypes can answer explicit open questions.
+
 Record a short decision brief: evidence, plausible alternatives, chosen approach and reason, main risk, and what would change the choice. Update it when evidence changes. Keep this in the task; promote it to a decision record only if future work must obey or understand it. Do not persist hidden reasoning, debate transcripts, or every discarded idea.
 
-When using design decomposition, resolve acceptance-critical choices before dispatching implementation. Link relevant coverage IDs, behavior, dependency contracts, and decision boundaries in each packet. Prototype uncertain mechanics under explicit hypotheses; return unexpected coupling or consequential simplifications for resolution. Expand only enough design to support the current slice safely.
+When using design decomposition, resolve acceptance-critical choices for the agreed feature before dispatching implementation. Link relevant coverage IDs, accepted behavior, dependency contracts, and decision boundaries in each packet. Prototype uncertain mechanics under explicit hypotheses; return unexpected coupling or consequential simplifications for resolution. Detail the whole feature's behavior; constrain code-level assignments to the current slice.
 
 ## 4. Build, verify, review
 

@@ -20,6 +20,7 @@
 - **Execution context:** <engine/toolchain, target build/platform/input, scene, scenario or seed>
 - **Contracts / budgets:** <affected state/save/content interfaces and agreed resource targets>
 - **Design coverage (when active):** <canonical design link and relevant IDs; requested scope versus current slice; accepted deviations>
+- **Exploration (when active):** <root-brief revision, assignment/depth budget, comparison/synthesis link; use each branch file as its assignment handoff>
 - **Evidence required:** <functional, content/import, target build, performance, or observed play; who can execute each>
 
 ## Initial framing

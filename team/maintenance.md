@@ -14,7 +14,7 @@ An explicit request to revise this baseline authorizes foundation edits. Record 
 
 At task close, the coordinator performs a small pass on touched records. Perform a wider curator pass after five completed standard/consequential tasks, when an active index becomes hard to scan, when a source contradicts its context note, or on request. Increment the completion count in [WORK](../project/WORK.md) for each such task closed; after a wider pass finishes, record its date and reset the count. A long idle interval triggers freshness checks on resumed work, not an automatic whole-repo rewrite.
 
-Starting size targets (soft limits, not correctness limits): root entry under 400 words; foundation under 500; role under 250; project brief under 350; area note under 500; task under 800; handoff under 350. Keep indexes one row per item, aiming for at most 20 active rows. Group a larger legitimate workload by area with linked subindexes; never discard unresolved work to hit a limit. Move detail only when it has a clear consumer. Measure words/bytes as proxies; exact token counts depend on the model.
+Starting size targets (soft limits, not correctness limits): root entry under 400 words; foundation under 500; role under 250; project brief under 350; area note under 500; task under 800; ordinary handoff under 350; design-branch artifact under 500. Feature specifications may exceed summary targets when necessary to resolve behavior and contracts. Keep indexes one row per item, aiming for at most 20 active rows. Group a larger legitimate workload by area with linked subindexes; never discard unresolved work to hit a limit. Move detail only when it has a clear consumer. Measure words/bytes as proxies; exact token counts depend on the model.
 
 ## Closeout pass
 
@@ -32,6 +32,8 @@ Search targeted records for broken links, duplicate rules, obsolete commands, ac
 For game projects, recheck affected engine/plugin versions, import/build recipes, renamed scene or asset references, save/network contracts, and profiling/playtest evidence after relevant changes. Keep design hypotheses visibly unverified until observed evidence supports them; do not preserve obsolete tuning conclusions as permanent rules.
 
 When design coverage is active, check affected IDs, accepted deviations, later scope, and evidence links against current design and implementation. Invalidate changed outcomes rather than preserving a stale verified status. Preserve unresolved requested work; consolidate duplicate specifications and link canonical contracts. Do not create design records for projects that do not need them.
+
+Keep exploration comparisons and source IDs compact in the canonical design. Archive proposals with their owning task only after synthesis or explicit rejection, transfer unresolved decisions to an active owner, and repair incoming links. Preserve decision-relevant alternatives and contradictions without copying branch narratives into active context. Changed root facts or parent contracts require rechecking dependent proposals and design readiness; unrelated branches need not be reread.
 
 Archive superseded decisions while retaining their status and replacement pointer in [DECISIONS](../project/DECISIONS.md). Accepted decisions remain addressable for as long as they constrain work. Archives are searchable by task ID or topic on demand and excluded from default reads; do not maintain a second narrative archive index.
 

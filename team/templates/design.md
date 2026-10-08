@@ -1,42 +1,66 @@
 # Design: <coherent game goal or feature>
 
-<!-- Copy on demand to project/design/<slug>.md for broad standard/consequential work. Existing canonical design docs may substitute. Keep one bounded record; expand only the next slice and critical dependencies. Rebase links when copying. Coordinator owns accepted coverage/scope; transfer whole-file writing ownership before designer edits and pause coordinator writes. Remove unused sections. -->
+<!-- Copy on demand to project/design/<slug>.md; an existing canonical design with equivalent fields may substitute. Rebase links. Keep one synthesis; consult branch sources on demand. Coordinator owns synthesis, accepted coverage/scope, and shared records; explicitly transfer whole-file authorship before designer edits. Task records own scheduling and assignment status. Remove unused sections. -->
 
-- **Owner / authority:** <record owner; who accepts consequential product changes>
-- **Sources:** <request, BRIEF, existing design, evidence; distinguish requirements from proposals>
-- **Updated:** <timestamp with timezone>
-- **Current slice / task:** <playable loop and linked task; intermediate or complete requested scope>
+- **Owner / authority:** <writer; who accepts consequential product changes>
+- **Sources / checkpoint:** <request, BRIEF, contracts, evidence; revisions/fingerprints; distinguish requirements from proposals>
+- **Updated / design revision:** <timestamp with timezone / revision>
+- **Current slice / task:** <linked playable slice; intermediate or whole requested scope>
 
-## Experience and boundaries
+## Neutral exploration brief
 
-<Defining player outcomes, relevant constraints, and explicit exclusions. Link BRIEF instead of duplicating it. Label untested feel/balance claims and unresolved reference-game expectations.>
+<!-- Establish before proposing a preferred solution. Link shared material instead of duplicating it. -->
+
+- **Brief ID / revision:** <stable reference shared by every branch>
+- **Experience / boundaries:** <player outcomes, hard constraints, production limits, exclusions; unresolved reference-game expectations>
+- **Comparison criteria:** <observable acceptance and tradeoffs; reject hard-constraint failures before comparing merits; no vote-count or word-count ranking>
+- **Material unknowns:** <unsupported feel/balance/feasibility claims, missing evidence, and discriminating questions>
+- **Exploration budget / authority:** <coordinator-controlled assignments, depth, concurrency, stop conditions; default 3 independent distinct concepts, shortlist at most 2, at most 2 focused children per survivor, one expansion layer, 8 total assignments including independent challenge, 3 concurrent or lower host limit; justify changes>
+
+## Branch comparison and disposition
+
+<!-- Compare all completed inputs before selection. After independent proposals, exchange concise transferable discoveries. Identify child work as competing variants or complementary facets. Sources use the design-branch template and serve as assignment handoffs. Retain reasons and checkpoint validity, not transcripts. -->
+
+| Source ID / link | Parent / stage / brief revision | Concept or contribution | Evidence / limits | Disposition / reason |
+| --- | --- | --- | --- | --- |
+| <branch ID / artifact> | <parent ID; concept, variant, facet, or challenge; root/parent revisions> | <distinct thesis and decisive tradeoff> | <observations versus assumptions; stale dependencies> | <shortlisted, adopted, modified, rejected, or unresolved; criterion-based reason> |
+
+## Synthesis and decisions
+
+- **Primary design:** <one coherent player experience, concrete sequence, and why it meets criteria>
+- **Source trace:** <adopted/modified/rejected source IDs and parts; rationale for adaptation or rejection>
+- **Compatibility / conflicts:** <resolved state, timing, ownership, and production conflicts; compatibility changes required by combined parts>
+- **Challenge / revisit:** <independent challenge source, strongest objections and resolution; unresolved evidence and conditions reopening decisions>
 
 ## Coverage
 
-<!-- Stable IDs connect design, packets, acceptance, and evidence. Scope: current / later / excluded. State: unresolved / specified / implemented / verified; excluded rows may use n/a. A simplified outcome needs its deviation and authority recorded, not a misleading full-fidelity pass. -->
+<!-- Stable IDs connect specifications, packets, acceptance, and evidence. Scope: current / later / excluded. State: unresolved / specified / implemented / verified; excluded may use n/a. A simplification needs its effect and accepting authority. -->
 
-| ID / player outcome | Supporting behavior, feedback, or content depth | Scope / state | Acceptance / evidence | Deviation or unknown / authority / follow-up |
+| ID / player outcome | Behavior, feedback, content depth | Scope / state | Acceptance / evidence | Deviation or unknown / authority / follow-up |
 | --- | --- | --- | --- | --- |
-| <D-01 / outcome> | <defining details; link specification below> | <current / specified> | <observable check or play question; link actual evidence when available> | <none, or simplification/unknown and decision owner; link committed follow-up> |
+| <D-01 / outcome> | <defining details; specification link> | <current / specified> | <observable check; actual evidence when available> | <effect, authority, owner, next action> |
 
-## Current slice specifications
+## Agreed feature specifications
 
-<!-- Use one short subsection per coherent behavior when needed. Later work can remain a coverage row. No mandatory specification file per subsystem. -->
+<!-- Specify the whole agreed feature and its interactions before design-ready, including later delivery slices. Detailed code assignments belong only to the next slice. Use coherent behavior subsections, not mandatory subsystem files. -->
 
-### <IDs / behavior>
+### <IDs / behavior and interactions>
 
-- **Authority / status:** <accepted rule, provisional local choice, or unresolved decision>
-- **Rules:** <trigger, state changes, success/failure, relevant lifecycle and edge cases>
-- **Feedback / content:** <visible/audible response, readability, meaningful variation if required>
-- **Tuning:** <provisional values, units, and revisit evidence; do not imply validated balance>
-- **Dependencies / contracts:** <relevant inputs/outputs, timing/state owners, identifiers; link canonical contract>
-- **Decision boundary:** <choices the worker can make; choices to return for resolution>
-- **Acceptance scenarios:** <normal flow, relevant failure/interaction cases, required evidence and executor>
+- **Authority / status:** <accepted rule, provisional choice, or unresolved decision>
+- **Rules / lifecycle:** <inputs, triggers, states, transitions, outputs, timing, ownership; success, failure, recovery, boundary cases>
+- **Feedback / variants:** <visible/audible response, accessibility/readability, meaningful content or behavior differences>
+- **Dependencies / constraints:** <parent/shared contracts, identifiers, production limits; save/network behavior only when relevant>
+- **Tuning assumptions:** <values, units, unsupported claims, and evidence for revision>
+- **Worked scenarios:** <concrete success, failure/recovery, and combined-system sequence; expected feedback and state; evidence needed and executor>
+- **Decision boundary:** <worker discretion; changes needing coordinator/product resolution>
 
-## Open decisions and revisions
+## Readiness and open decisions
 
-| Question / affected IDs | Owner / next action | Provisional assumption or accepted decision link | Evidence requiring revision |
+- **Implementation readiness:** <ready or gaps; complete agreed behavior/contracts, compatibility resolution, and challenge disposition>
+- **Approved scope / gameplay evidence:** <accepting authority and deviations; separately state implemented/observed outcomes and unverified feel/balance claims; readiness is neither scope approval nor gameplay verification>
+
+| Question / affected IDs | Owner / next action | Assumption or accepted decision link | Revisit evidence |
 | --- | --- | --- | --- |
-| <critical ambiguity> | <who resolves it and how> | <explicitly unresolved, or authorized reversible prototype> | <observation or dependency change> |
+| <remaining uncertainty> | <resolver and action> | <unresolved or authorized reversible prototype> | <observation/dependency change> |
 
-<!-- At integration, update only affected rows and invalidate stale evidence. Report remaining scope at slice closure. Lasting implemented contracts live in area notes; design intent stays here. Do not duplicate task/assignment status or debate transcripts. -->
+<!-- Update affected rows and invalidate stale evidence after changes. Preserve later scope with an active owner in task/WORK. Lasting implemented contracts live in area notes; design intent stays here. -->

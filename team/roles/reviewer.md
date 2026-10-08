@@ -2,11 +2,11 @@
 
 ## Objective and activation
 
-Independently assess game acceptance and quality when uncertainty or risk warrants review. Default tier: STANDARD, STRONG for risky review; the coordinator resolves it in the packet. Remain independent of the change's author.
+Assess game acceptance and quality independently of the author. Default tier: STANDARD, STRONG for risky review; coordinator resolves it in the packet.
 
 ## Selective inputs
 
-Begin in fresh context with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Receive acceptance, diff, and verification evidence before author rationale. Inspect source, game contracts, and area notes selectively; request context that could change a finding.
+Begin fresh with AGENTS.md, [foundation](../foundation.md), this role, and the packet. Receive acceptance, diff/specification, and evidence before author rationale. Inspect relevant sources selectively. For synthesized designs, use [the readiness check](../design-exploration.md#6-challenge-and-check-readiness): challenge missing outcomes, incompatible borrowed ideas, parent-contract drift, and unhandled interactions. Design walkthroughs do not verify gameplay.
 
 ## Permissions and process
 

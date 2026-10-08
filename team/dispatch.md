@@ -15,7 +15,7 @@ Audience: coordinator, before delegating. Resolve model aliases and capabilities
 | [Partner](roles/partner.md) | STRONG | Independent questions, options, falsifying checks |
 | [Coordinator](roles/coordinator.md) | STRONG for difficult decisions | Scope, decisions, integration, acceptance |
 | [Curator](roles/curator.md) | FAST for links; STANDARD for synthesis | Verified context repairs and pruning |
-| [Game designer](roles/game-designer.md) | STANDARD; STRONG for ambiguous systems | Player-outcome hypothesis and bounded design experiment |
+| [Game designer](roles/game-designer.md) | STANDARD; STRONG for ambiguous concepts, contracts, or synthesis | Independent proposal, detailed branch, or coherent feature specification |
 | [Content integrator](roles/content-integrator.md) | FAST for mechanical work; STANDARD for integration | Valid referenced/imported content and playable scene assembly |
 | [Performance analyst](roles/performance-analyst.md) | FAST for known captures; STRONG for diagnosis | Comparable measurements and supported bottleneck findings |
 | [Playtester](roles/playtester.md) | STANDARD; FAST for scripted observation | Reproducible player-flow observations and experience feedback |
@@ -28,6 +28,8 @@ If one bounded attempt lacks evidence, contradicts sources, or discovers deeper 
 
 For [decomposed game work](design-decomposition.md), dispatch FAST implementation only after relevant behavior, interfaces, and objective acceptance are established. Resolve missing design with the coordinator/designer or a stronger tier. Keep each assignment a coherent behavior with enough parent intent and interaction context; smaller fragments alone do not establish quality or savings.
 
+For [branching exploration](design-exploration.md), distinguish independent concept generation, deeper variants/facets, synthesis, and independent challenge. These are assignment modes for existing roles. FAST handles bounded fact gathering and mechanical consistency checks; do not downgrade open-ended concepts or synthesis because their output is short. The coordinator alone authorizes tree expansion and budgets.
+
 ## Assignment packet
 
 Give a fresh agent only:
@@ -38,11 +40,14 @@ Give a fresh agent only:
 - Exact writable files or directories, read scope, owner, and whether tools may mutate outputs.
 - For game work, relevant engine/build/platform, scene or reproduction recipe, input/seed, content dependencies, and agreed resource budgets; include only what the assignment needs.
 - Requested tier, expected output length, and a stopping condition.
+- For a design branch: root-brief/parent-contract revisions, parent ID, concept/variant/facet question, fixed comparison criteria, sibling-visibility boundary, and expansion budget. Initial concepts see shared facts without preferences or peer proposals; later branches receive only applicable parent decisions and approved discoveries.
 - Assigned handoff path and the next consumer. Include the handoff fields inline if the worker cannot read its template.
 
 Default to no inherited conversation history. Ordinary workers read root instructions, foundation, their own role, the packet, and relevant sources. Discover additional context when needed for correctness; the read list is a starting point, not a ban on finding dependencies. Expand write scope only through the coordinator. Workers do not spawn more agents by default.
 
 Use up to three simultaneous workers as a starting ceiling, lowered to runtime limits. Spawn only independent work with a useful expected return. Prefer one scout with a bounded search to many overlapping scouts. A task already cheaper to do than explain stays local. Keep returns around 250 words plus essential evidence pointers; budget exceptions preserve important risks.
+
+Design branches write their complete proposal to the assigned branch file and return a short decision-relevant summary. That file replaces a separate handoff. Fresh contexts can run serially when slots are limited; label shared-context alternatives as limited-isolation analysis. Require dependencies to finish before dispatching dependent children and recheck proposals invalidated by brief/contract changes.
 
 ## Context-isolated pair programming
 
