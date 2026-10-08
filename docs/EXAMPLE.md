@@ -8,6 +8,23 @@ Request: adjust an existing dash cooldown to an agreed value.
 
 The coordinator checks the relevant tuning asset and contract, changes the value, and runs the available focused validation. If acceptance includes feel, it needs an observed play check. Optional feel exploration may be an owned follow-up only when outside the task's agreed acceptance. A clear data-only change uses the small path: no task directory or full agent roster. An unexpected save-schema or shared-system impact promotes it before broader edits.
 
+## A broad request with defining details
+
+Request: create an action RPG with readable combat, meaningful equipment choices, and varied encounters. The coordinator frames scope and unknowns, performs relevant discovery, then opens one task and a compact design record for the goal. These illustrative outcomes describe a proposed first slice; they are not verified results.
+
+| ID | Defining details | Delivery scope / evidence state |
+| --- | --- | --- |
+| D-01: readable combat | Distinct attack cue, contact feedback, recovery, and clear death transition | Current / specified |
+| D-02: useful equipment decisions | Pickup, inspect, compare, equip, and observe the defined combat effect | Current / specified |
+| D-03: encounter variety | Enemy behavior differences require distinguishable player responses | Current / unresolved |
+| D-04: broader progression | Additional areas and equipment progression; depth still needs definition | Later / unresolved |
+
+The designer proposes behavior differences for D-03 and a play question that could reject them. The coordinator resolves shared damage, death, item, and timing contracts before implementation. A FAST builder can receive one resolved enemy attack sequence: trigger, cue, attack, recovery, permitted tuning choices, interface semantics, and interruption/death acceptance. It receives relevant D-01/D-03 intent, not the entire game design.
+
+The worker returns an unresolved interruption rule instead of silently omitting it. The coordinator resolves it or routes a bounded prototype, then updates dependent acceptance. Integrated evaluation exercises fight, reward, compare, equip, and fight again; it checks cross-system behavior and the promised feedback. Local attack tests alone cannot verify D-02 or encounter variety.
+
+If evidence supports only mechanical behavior, observed readability stays open. D-04 remains visible after the first slice closes. Simplified equipment comparison requires recorded scope and authority; it does not become a full-fidelity pass. Completion of this slice is reported as an intermediate milestone. No design record is created for the cooldown change above.
+
 ## A new playable slice
 
 Request: add a directional dash to an existing game without breaking movement, pause, or scene transitions.

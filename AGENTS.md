@@ -1,6 +1,6 @@
 # Agent entry point
 
-This reusable baseline uses a layered Markdown workflow. Read selectively; links are routes, not a request to load everything.
+This reusable baseline uses layered Markdown. Read selectively; links are routes, not a request to load everything.
 
 ## Editing the baseline
 
@@ -18,6 +18,7 @@ For explicit requests to maintain this reusable template, keep `project/` uninit
 | Need | Read |
 | --- | --- |
 | Frame or validate game work | [Game-development profile](team/game-development.md); workers receive relevant constraints in their packets |
+| Decompose broad game goals | [Design decomposition](team/design-decomposition.md); coordinator/designer; workers receive relevant decisions |
 | Delegate, select models, isolate a partner | [Dispatch](team/dispatch.md); coordinator also reads [runtime bindings](project/RUNTIME.md) |
 | Resume, plan, implement, finish | [Workflow](team/workflow.md) and the assigned task |
 | Prune stale context or revise the baseline | [Maintenance](team/maintenance.md) |

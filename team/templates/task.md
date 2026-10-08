@@ -19,6 +19,7 @@
 - **Player outcome / hypothesis:** <observable outcome; label untested feel/balance claims>
 - **Execution context:** <engine/toolchain, target build/platform/input, scene, scenario or seed>
 - **Contracts / budgets:** <affected state/save/content interfaces and agreed resource targets>
+- **Design coverage (when active):** <canonical design link and relevant IDs; requested scope versus current slice; accepted deviations>
 - **Evidence required:** <functional, content/import, target build, performance, or observed play; who can execute each>
 
 ## Initial framing
@@ -55,7 +56,7 @@
 | --- | --- | --- | --- |
 | <criterion> | <reproducible check evidence> | <checkpoint / time> | <passed, failed, or not run; remaining gaps> |
 
-<Integration checks and review findings; later edits invalidate affected checks.>
+<Integration checks and review findings; link affected design IDs and combined-slice evidence when tracked. Later edits invalidate affected checks.>
 
 ## Current state and next action
 

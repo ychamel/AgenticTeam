@@ -31,6 +31,8 @@ Search targeted records for broken links, duplicate rules, obsolete commands, ac
 
 For game projects, recheck affected engine/plugin versions, import/build recipes, renamed scene or asset references, save/network contracts, and profiling/playtest evidence after relevant changes. Keep design hypotheses visibly unverified until observed evidence supports them; do not preserve obsolete tuning conclusions as permanent rules.
 
+When design coverage is active, check affected IDs, accepted deviations, later scope, and evidence links against current design and implementation. Invalidate changed outcomes rather than preserving a stale verified status. Preserve unresolved requested work; consolidate duplicate specifications and link canonical contracts. Do not create design records for projects that do not need them.
+
 Archive superseded decisions while retaining their status and replacement pointer in [DECISIONS](../project/DECISIONS.md). Accepted decisions remain addressable for as long as they constrain work. Archives are searchable by task ID or topic on demand and excluded from default reads; do not maintain a second narrative archive index.
 
 Delete disposable logs, abandoned scratch notes, and duplicate summaries only after confirming no needed evidence or unresolved obligation lives there. Do not silently delete historical decision records or task outcomes; storage is cheaper than rediscovery. Without recoverable version history, retain original records while pruning active summaries. Report what changed, what evidence was checked, and what remains uncertain in the current task handoff; do not create an unbounded maintenance journal.

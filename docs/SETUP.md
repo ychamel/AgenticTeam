@@ -1,10 +1,10 @@
 # Adopt the game-development baseline
 
-Read during initial setup or migration, not at every task start. The five `project/*.md` files describe the destination game; its identity, facts, and model bindings are intentionally uninitialized. Task and decision indexes are empty, maintenance counters start at zero, and no project history is included.
+Read during initial setup or migration, not at every task start. The top-level `project/*.md` files describe the destination game; its identity, facts, and model bindings are intentionally uninitialized. Task and decision indexes are empty, maintenance counters start at zero, and no project history is included.
 
 ## New repository
 
-1. Copy `AGENTS.md`, `team/`, and the five top-level `project/*.md` files into the destination root. Also copy `docs/SETUP.md`, `docs/DESIGN.md`, and `docs/EXAMPLE.md` so reference links resolve. Keep the destination's product README; this template's README is optional.
+1. Copy `AGENTS.md`, `team/`, and the top-level `project/*.md` files into the destination root. Also copy `docs/SETUP.md`, `docs/DESIGN.md`, `docs/EXAMPLE.md`, and `docs/TRIAL.md` so reference links resolve. Keep the destination's product README; this template's README is optional.
 2. Ask the agent to initialize the project context using the prompt below. It should inspect only relevant manifests, entry points, CI, and existing documentation, or use your stated requirements for an empty project.
 3. Fill BRIEF with game pillars, core loop, engine/toolchain, target platforms/input, and agreed budgets. Fill MAP with real code, scene/asset, import, test, and build entry points. RUNTIME holds agent capabilities and models. WORK and DECISIONS start empty. Unknown facts stay explicit; do not invent a frame-rate target or multiplayer requirement.
 4. Run a small real task. Verify that the agent reads the intended route, saves a handoff when delegated, and reports actual checks. A tiny local fix should not create a team of agents or a task directory.
@@ -14,6 +14,8 @@ Example bootstrap request:
 > Read AGENTS.md and the game-development profile, then initialize this baseline for the current game repository. Infer facts from code, scenes, and maintained configuration; record engine/platform/input, known budgets, asset/import boundaries, sources, and unknowns. Bind FAST, STANDARD, and STRONG when supported. Keep active work empty unless the request includes implementation. Explain initialized files and unavailable editor, build, device, or playtest capabilities.
 
 For a truly new game, include the player experience, core loop, intended platforms, constraints, and preferred engine if known. The agent can begin a small authorized prototype while clarifying consequential unknowns. Keep uncertain mechanics as hypotheses and request real play observations when acceptance needs them.
+
+Broad requests activate [design decomposition](../team/design-decomposition.md) after framing and relevant discovery. Create detailed project design records only for actual project work, link them from existing context, and preserve requested scope beyond the first slice. Do not initialize design records while maintaining this reusable template. A clear tuning fix still needs no design record.
 
 ## Existing repository
 
@@ -46,4 +48,4 @@ Point the host's native instruction entry point at AGENTS.md or include its smal
 
 ## Baseline updates
 
-Compare the adopted foundation and game-profile versions with the versions you want to adopt. Review changes to AGENTS and `team/`; retain project context and runtime bindings. The game profile layers on foundation 1.0.0 without changing its contract. Apply compatible updates as a deliberate change, inspect local instruction conflicts, and try one representative playable-slice task. Do not overwrite `project/` with empty starter files during an upgrade. See [maintenance](../team/maintenance.md).
+Compare the adopted foundation and game-profile versions with the versions you want to adopt. Review changes to AGENTS and `team/`; retain project context and runtime bindings. Profile 1.1.0 adds optional design decomposition on unchanged foundation 1.0.0. Existing canonical design docs can substitute for the new template. Apply compatible updates as a deliberate change, inspect local instruction conflicts, and try one representative playable-slice task. Do not overwrite `project/` with empty starter files during an upgrade. See [maintenance](../team/maintenance.md).

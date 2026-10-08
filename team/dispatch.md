@@ -26,11 +26,14 @@ FAST means a smaller, faster model available in this runtime, not a weaker quali
 
 If one bounded attempt lacks evidence, contradicts sources, or discovers deeper coupling, narrow the task or escalate a tier with a short summary. Do not repeat the same cheap attempt indefinitely. Model output is checked to the same acceptance standard at every tier.
 
+For [decomposed game work](design-decomposition.md), dispatch FAST implementation only after relevant behavior, interfaces, and objective acceptance are established. Resolve missing design with the coordinator/designer or a stronger tier. Keep each assignment a coherent behavior with enough parent intent and interaction context; smaller fragments alone do not establish quality or savings.
+
 ## Assignment packet
 
 Give a fresh agent only:
 
 - Task/assignment ID, process role, goal, acceptance criteria, and relevant non-negotiable constraints.
+- For decomposed designs, relevant coverage IDs, accepted behavior/excerpts, success/failure scenarios, dependency contracts, and the choices the worker may make or must return for resolution. Omit unrelated design branches.
 - Initial sources or source excerpts; facts already verified and remaining questions. Include cross-cutting constraints even if they live outside the requested files.
 - Exact writable files or directories, read scope, owner, and whether tools may mutate outputs.
 - For game work, relevant engine/build/platform, scene or reproduction recipe, input/seed, content dependencies, and agreed resource budgets; include only what the assignment needs.

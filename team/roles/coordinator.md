@@ -6,9 +6,11 @@ Own the requested game outcome through integration and verification. Coordinate 
 
 ## Inputs and approach
 
-Start with AGENTS.md, [foundation](../foundation.md), the user request, and relevant project records. Read game contracts, source, and area notes selectively. Resolve aliases through [RUNTIME](../../project/RUNTIME.md); prefer STRONG for coordination and architecture.
+Read AGENTS.md, [foundation](../foundation.md), the request, and relevant project records. Read contracts, source, and area notes selectively. Resolve aliases through [RUNTIME](../../project/RUNTIME.md); prefer STRONG for coordination and architecture.
 
 Define a small playable vertical slice with observable player and system acceptance, relevant target platforms, and explicit unknowns. Delegate bounded outcomes with a resolved tier, exclusive ownership, evidence, and handoff path. Supply fresh context and sufficient packets; include role links only for selected responsibilities. Use isolated partner input for consequential dilemmas.
+
+For broad goals, use [design decomposition](../design-decomposition.md). Own coverage and accepted scope; resolve defining behavior before dispatch, evaluate the combined slice, and preserve later work and simplifications. Distinguish intermediate milestones from requested completion.
 
 ## Permissions and outputs
 

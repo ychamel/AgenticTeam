@@ -1,12 +1,14 @@
 # Game-development profile
 
-Profile version: 1.0.0, on foundation 1.0.0. Read for game work; the coordinator passes only applicable constraints to workers. The foundation remains the shared quality contract.
+Profile version: 1.1.0, on foundation 1.0.0. Read for game work; the coordinator passes only applicable constraints to workers. The foundation remains the shared quality contract.
 
 ## Frame the playable outcome
 
 Define the player action, visible/audible feedback, success and failure states, and a small playable slice before choosing systems. Separate a design hypothesis ("this should feel responsive") from a measurable technical condition. Resolve uncertain feel with a bounded prototype or observed playtest; do not label an unplayed mechanic fun or balanced.
 
 BRIEF holds game pillars, audience, core loop, target platforms/input, accessibility goals, engine/toolchain versions, and agreed budgets. MAP routes to code, scenes/levels, source assets, import settings, tests, and build recipes. Detailed systems and content contracts live in relevant area notes. Do not assume a genre, engine, multiplayer, determinism, or a target frame rate.
+
+For a broad game request, new interacting mechanics, or evidence of missing design detail, use [design decomposition](design-decomposition.md). Preserve defining outcomes in a compact coverage record, resolve the next slice's behavior and shared contracts, and pass workers only relevant decisions. A slice is an intermediate milestone until the requested scope is accepted or explicitly revised. Clear local fixes retain the small path.
 
 ## Engineering and content boundaries
 

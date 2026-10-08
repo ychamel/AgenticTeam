@@ -17,6 +17,8 @@
 
 <Inputs, outputs, interfaces, important error behavior, data/security boundaries, and compatibility requirements. Link authoritative source or accepted requirements for each material claim. Distinguish intended behavior from verified current behavior.>
 
+<Link relevant design coverage IDs when present; keep detailed intended behavior in its canonical design source and verified implementation contracts here.>
+
 ## Dependencies and consumers
 
 <Relevant upstream/downstream areas and external systems; link their contracts. Include cross-cutting constraints needed for safe changes.>

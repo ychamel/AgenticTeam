@@ -24,6 +24,8 @@ Promote a small task to standard before delegating, suspending with unfinished c
 
 For small work, proceed directly from framing to the edit, proportionate verification, updates to any changed canonical facts, and final reporting. The task-record, assignment, checkpoint-file, and archival steps below apply to standard/consequential work only.
 
+For broad game requests or interacting new systems, apply [design decomposition](design-decomposition.md): preserve requested coverage, then resolve the next slice's behavior and shared contracts. Create or link its design record with resumable state below; refine decisions using discovery evidence. A clear local change needs no design record. Keep the requested outcome distinct from an intermediate slice's acceptance.
+
 ## 2. Establish resumable state
 
 Read the relevant row of [WORK](../project/WORK.md); reuse its task rather than creating a competing record. For new work, create `project/tasks/YYYY-MM-DD-short-slug/task.md` from [the task template](templates/task.md), checking for name collisions. Create directories only when needed. Register one row in WORK with owner, status, and next action.
@@ -38,11 +40,15 @@ Have a scout locate relevant code, constraints, and checks when that saves main-
 
 Record a short decision brief: evidence, plausible alternatives, chosen approach and reason, main risk, and what would change the choice. Update it when evidence changes. Keep this in the task; promote it to a decision record only if future work must obey or understand it. Do not persist hidden reasoning, debate transcripts, or every discarded idea.
 
+When using design decomposition, resolve acceptance-critical choices before dispatching implementation. Link relevant coverage IDs, behavior, dependency contracts, and decision boundaries in each packet. Prototype uncertain mechanics under explicit hypotheses; return unexpected coupling or consequential simplifications for resolution. Expand only enough design to support the current slice safely.
+
 ## 4. Build, verify, review
 
 Assign disjoint file ownership or serialize overlapping changes. Builders update their handoffs at meaningful milestones. Verify behavior against acceptance criteria, including relevant failure paths. Tests or builds that mutate shared outputs must run serially or in isolated directories.
 
 For a playable slice, verify its relevant code and content together. Select scene/import checks, gameplay scenarios, target-build smoke tests, performance measurements, or playtests according to acceptance. Record unavailable engine/device/human-play access explicitly and keep dependent criteria open. Save/import operations must respect related-file ownership.
+
+For tracked design outcomes, inspect the integrated slice against the defining details and interaction scenarios, then update affected coverage rows with evidence. Local worker passes do not verify the combined experience. Keep missing evidence, accepted simplifications, and later scope visible; report slice completion separately from completion of the requested game.
 
 Use an independent reviewer for consequential changes and for standard changes when it adds confidence. Give them acceptance criteria, the diff, and evidence before the builder's rationale. Resolve findings against evidence, then rerun only affected checks. The coordinator inspects the combined change and verifies interfaces across assignments; worker success does not prove integration.
 
@@ -57,6 +63,8 @@ Before any yield, known compaction, ownership transfer, blocked return, or compl
 3. The coordinator updates task state and WORK: integrated results, current ownership, exact next action, and unresolved work. Save worker records before marking their assignments integrated.
 
 At completion, promote lasting facts to BRIEF, MAP, relevant area notes, or accepted decisions. Keep unfinished issues in WORK with an owner and next action. Run the small closeout pass in [maintenance](maintenance.md), remove the completed row from the active list, and archive the task. Report result, verification, and material limits. No new permission step is needed for ordinary authorized record updates.
+
+An intermediate slice may close only when its acceptance is satisfied and outstanding requested scope remains actively owned in WORK with the next slice or blocker. If the same task owns the broader request, keep it active and continue; a design record's later-scope rows do not replace an executable handoff.
 
 ## Resume after interruption
 

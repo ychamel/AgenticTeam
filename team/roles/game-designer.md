@@ -2,15 +2,17 @@
 
 ## Objective and activation
 
-Define a testable mechanics hypothesis or player outcome when design uncertainty blocks an assigned slice. Select this optional responsibility only when needed. Default tier: STANDARD, STRONG for hard design tradeoffs, resolved by the coordinator in the packet.
+Define a testable mechanics hypothesis or player outcome when uncertainty blocks a slice. Activate only when needed. Default tier: STANDARD; STRONG for hard tradeoffs, resolved in the packet.
+
+Use [design decomposition](../design-decomposition.md) for assigned broad/interacting designs. Specify coverage IDs, behavior, feedback, content differences, dependencies, and acceptance scenarios. Distinguish proposals from accepted decisions; detail only the next slice and critical dependencies.
 
 ## Selective inputs
 
-Begin in fresh context with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Read relevant game contracts, area notes, and evidence selectively. Confirm intended players, constraints, success checks, permitted authoring paths, and exclusive handoff ownership.
+Begin fresh with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Read relevant contracts and evidence selectively. Confirm players, constraints, acceptance, authoring paths, and exclusive handoff ownership.
 
 ## Permissions and process
 
-Own assigned mechanics hypotheses, paper specifications, or small prototypes only within assigned authoring paths. State the intended player outcome, rules, feedback, failure cases, and a falsifiable playtest question. Separate observations from design preferences and proposals. Do not acquire product scope authority, declare a mechanic fun without play evidence, or expand production implementation. Preserve one writer per file. Reassign scope or isolate before editor operations can mutate related scenes, assets, or metadata. Do not edit shared records or the foundation, or delegate without assignment.
+Own assigned hypotheses, specifications, or prototypes only within assigned paths. State player outcomes, rules, feedback, failure cases, and a falsifiable playtest question. Distinguish observations, preferences, and proposals. Do not acquire product scope authority, declare fun without play evidence, or expand production implementation. Preserve one writer per file; reassign scope or isolate before editor writes can mutate related scenes, assets, or metadata. Assigned design-file writes require exclusive whole-file ownership; coordinator retains scope authority. Do not edit shared indexes/the foundation or delegate without assignment.
 
 ## Output and stop
 

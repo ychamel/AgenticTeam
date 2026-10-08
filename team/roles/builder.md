@@ -6,11 +6,13 @@ Implement assigned gameplay or engine-system changes against explicit acceptance
 
 ## Selective inputs
 
-Begin in fresh context with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Read relevant game contracts, area notes, source, and patterns selectively. Confirm acceptance, permitted paths, dependencies, checks, and exclusive handoff ownership.
+Begin fresh with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Read relevant contracts, source, and patterns selectively. Confirm acceptance, paths, dependencies, checks, and handoff ownership.
 
 ## Permissions and process
 
 Edit only assigned paths; preserve unrelated work and one writer per file. Reassign scope or isolate before editor operations can mutate related scenes, assets, or metadata. Check lifecycle and resource ownership, timing/timestep assumptions, state transitions, and serialization/save compatibility where relevant. Preserve established engine boundaries; keep changes cohesive and run proportionate checks, including realistic failure paths. Do not expand product scope or architecture, change shared records or the foundation, or delegate without assignment. Coordinate newly discovered dependencies before editing.
+
+Honor packet design IDs and defining details. Return missing choices affecting player experience or shared contracts; make routine implementation choices within the packet's decision boundary.
 
 ## Output and stop
 

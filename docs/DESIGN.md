@@ -1,6 +1,6 @@
 # Design notes
 
-Foundation: 1.0.0. Game profile: 1.0.0. These are explanations for maintainers, not another layer every agent must read.
+Foundation: 1.0.0. Game profile: 1.1.0. These are explanations for maintainers, not another layer every agent must read.
 
 ## Game-development profile
 
@@ -12,11 +12,22 @@ Shared scene files, imported metadata, and editor/build outputs add ownership ri
 
 The game profile builds on the shared foundation, task lifecycle, and model aliases. The four specialist guides are loaded only when selected. The small-task path remains available. The profile imposes no engine, genre, multiplayer requirement, or fixed resource budget.
 
+## Layered design experiment
+
+Profile 1.1.0 adds optional [design decomposition](../team/design-decomposition.md) for broad game goals, interacting systems, and observed detail loss. Its aim is to preserve product intent while resolving bounded implementation assignments. This is a hypothesis about quality and coordination cost, not a measured improvement.
+
+A compact coverage map connects player outcomes to behavior, presentation, content depth, acceptance, and evidence. Delivery scope and evidence state are separate: a verified first slice does not imply that later scope exists. Simplifications name their effect and authority. Decision layers describe experience, behavior, shared contracts, implementation, and evaluation; playable slices exercise them together.
+
+Only the next slice and critical dependencies receive detailed specification. Workers inherit relevant decisions and parent intent, with routine choices allowed inside explicit boundaries. A stronger coordinator/designer resolves ambiguous mechanics and integration, while objective bounded work can use FAST. The protocol neither increases a model's inherent capability nor guarantees savings.
+
+One canonical design record is created on demand and linked through existing records. No new permanent role, index, scheduler, mandatory task per layer, or initialized project data is introduced. Small local changes bypass decomposition. Existing projects can keep equivalent canonical design docs; the unchanged foundation remains compatible. [The comparison guide](TRIAL.md) covers quality, omissions, escalation, and overhead. Remove or narrow process that trials show has no useful consumer.
+
 ## Design choices
 
 | Concern | Choice | Tradeoff |
 | --- | --- | --- |
 | Important rules get lost in long prompts | Small root router plus shared foundation | Requires disciplined routing and actual reads |
+| Broad game goals lose defining details | Coverage IDs, bounded behavior specifications, integrated scenarios | More design work; benefit must be compared with overhead |
 | Every worker inherits irrelevant history | Fresh assignment packets and one role | Coordinator must include relevant cross-cutting constraints |
 | Too much work lands on the expensive model | Capability aliases with bounded FAST tasks | Savings depend on host support and escalation rates |
 | The main agent anchors on its first idea | Context-isolated STRONG partner before consequential choices | Neutral framing still contains the driver's assumptions |
@@ -39,7 +50,7 @@ flowchart LR
     V -->|Unresolved| W[Active work with owner]
 ```
 
-A fact has one canonical home: product intent in BRIEF, locations and commands in MAP, subsystem contracts in area notes, consequential rationale in decision records, and current execution state in a task. Handoffs carry evidence and next actions across agent boundaries; they do not redefine product requirements. Indexes route to these records without retelling their content.
+A fact has one canonical home: product pillars and boundaries in BRIEF, detailed intended behavior and coverage in an activated design record, locations and commands in MAP, verified subsystem contracts in area notes, consequential rationale in decision records, and current execution state in a task. Handoffs carry evidence and next actions across agent boundaries; they do not redefine product requirements. Indexes route to these records without retelling their content.
 
 The root and foundation are shared, small inputs. The coordinator handles coordination guides and project indexes. Workers receive relevant facts and sources, not a copy of all coordinator context. The partner gets a neutral problem and the baseline contract inline, with no project-file exploration. Required platform-injected instructions still apply.
 
@@ -57,4 +68,4 @@ This is a behavioral protocol, not an orchestration engine. It cannot guarantee 
 
 Word targets are starting heuristics, not measured token guarantees. Do not split a coherent rule across many tiny files merely to satisfy a budget. Prefer pruning duplication, linking evidence, and giving workers bounded questions. Add files or roles only when repeated work demonstrates a distinct consumer and ownership boundary.
 
-Version 1.0.0 establishes the initial contract. Future revisions record their purpose and compatibility impact here, keeping historical detail in version control rather than growing the agent entry point.
+Foundation 1.0.0 establishes the initial contract. Profile 1.1.0 adds the compatible design-decomposition experiment described above. Future revisions record their purpose and compatibility impact here, keeping historical detail in version control rather than growing the agent entry point.

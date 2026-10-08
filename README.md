@@ -25,12 +25,13 @@ Archives, other roles, and unrelated decisions stay out of default context.
 | [AGENTS.md](AGENTS.md) | Entry point and reading routes | Baseline revision |
 | [team/foundation.md](team/foundation.md) | Quality, evidence, collaboration, completion | Stable during ordinary work |
 | [team/game-development.md](team/game-development.md) | Player outcomes, content ownership, game-specific validation | Versioned game profile |
+| [team/design-decomposition.md](team/design-decomposition.md) | Preserve broad design coverage and resolve bounded implementation | Coordinator/designer; activated when needed |
 | `team/` process guides and [roles](team/roles/) | Workflow, dispatch, maintenance, focused responsibilities | Deliberate baseline updates |
-| [team/templates/](team/templates/) | Small task, handoff, decision, and area forms | Copy only when needed |
+| [team/templates/](team/templates/) | Task, handoff, design, decision, and area forms | Copy only when needed |
 | [project/BRIEF.md](project/BRIEF.md), [MAP.md](project/MAP.md) | Project purpose, boundaries, locations, commands | Verified project facts |
 | [project/WORK.md](project/WORK.md), [DECISIONS.md](project/DECISIONS.md) | Compact routing indexes | Coordinator-owned updates |
 | [project/RUNTIME.md](project/RUNTIME.md) | Model aliases and observed host capabilities | Per environment |
-| `project/tasks/`, `areas/`, `decisions/`, `archive/` | Work and durable knowledge | Created on demand |
+| `project/tasks/`, `design/`, `areas/`, `decisions/`, `archive/` | Work and durable knowledge | Created on demand |
 | [docs/](docs/) | Setup, design rationale, worked example | Human/reference material; not default agent input |
 
 ## How work flows
@@ -55,6 +56,10 @@ These are eleven available responsibilities. Activate only the useful ones: a tu
 
 Minor fixes use a short path. Resumable or delegated work gets one task directory with separate, exclusively owned handoffs. Consequential choices become decision records; completed work leaves the active index. [The worked example](docs/EXAMPLE.md) shows delegation, a design challenge, interruption recovery, and closeout.
 
+Broad game requests use a compact design coverage record before dispatch. It keeps defining behavior, feedback, content differences, omissions, and later scope visible while specifying only the next playable slice. Workers receive relevant decisions and contracts; integrated checks assess those details together. A finished slice remains an intermediate milestone until the requested scope is satisfied or explicitly revised. Clear local changes need no design record or extra role.
+
+This branch is an experiment in preserving detail with bounded assignments. Quality and coordination cost remain unmeasured; [the comparison guide](docs/TRIAL.md) describes how to compare it with the previous workflow and capture actionable feedback.
+
 “Automatic” means the instructions require agents to update records at milestones and before yielding. Markdown does not run a scheduler, choose a model by itself, enforce access controls, or guarantee a write after a crash. Multi-agent execution, cheaper models, and context isolation depend on host support; the framework defines explicit fallbacks. Codex-specific setup follows [official instruction-loading](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [subagent guidance](https://learn.chatgpt.com/docs/agent-configuration/subagents).
 
-No package manager, database, orchestration service, or required scripts. Copy the baseline into a new repo and initialize the five project files from evidence. Choose the engine, genre, platforms, and budgets for that game; no particular game stack is imposed here.
+No package manager, database, orchestration service, or required scripts. Copy the baseline into a new repo and initialize the top-level project files from evidence. Choose the engine, genre, platforms, and budgets for that game; no particular game stack is imposed here.

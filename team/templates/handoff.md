@@ -17,6 +17,8 @@
 
 <Relevant build/engine/platform/hardware, scene/scenario, input/seed, content/settings fingerprints, and required budgets. Separate executed gameplay observations from predictions; state missing editor/device/play access.>
 
+<When design coverage is active: relevant IDs, implemented details, deviations or missing decisions, and local versus integrated evidence. Coordinator updates the canonical coverage record.>
+
 ## Facts and assumptions
 
 - **Verified:** <finding, source pointer, supporting observation>
