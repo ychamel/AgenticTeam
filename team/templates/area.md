@@ -21,6 +21,8 @@
 
 <Relevant upstream/downstream areas and external systems; link their contracts. Include cross-cutting constraints needed for safe changes.>
 
+<For game areas, include relevant scene/asset identifiers, import/source relationships, simulation/lifecycle ownership, save or network schema, and target resource budgets. Omit absent systems.>
+
 ## Relevant commands
 
 | Purpose | Exact command | CWD / prerequisites | Evidence of last verification |

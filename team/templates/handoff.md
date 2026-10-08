@@ -13,6 +13,10 @@
 
 <Outcome, scope, acceptance criteria.>
 
+## Game context (optional)
+
+<Relevant build/engine/platform/hardware, scene/scenario, input/seed, content/settings fingerprints, and required budgets. Separate executed gameplay observations from predictions; state missing editor/device/play access.>
+
 ## Facts and assumptions
 
 - **Verified:** <finding, source pointer, supporting observation>

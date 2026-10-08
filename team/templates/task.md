@@ -14,6 +14,13 @@
 
 - [ ] <Acceptance criterion and how it will be checked>
 
+## Game context (only when relevant)
+
+- **Player outcome / hypothesis:** <observable outcome; label untested feel/balance claims>
+- **Execution context:** <engine/toolchain, target build/platform/input, scene, scenario or seed>
+- **Contracts / budgets:** <affected state/save/content interfaces and agreed resource targets>
+- **Evidence required:** <functional, content/import, target build, performance, or observed play; who can execute each>
+
 ## Initial framing
 
 <!-- Complete before detailed searches; at most five bullets. Retain material changes to the framing as concise corrections. -->

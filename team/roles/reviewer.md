@@ -2,18 +2,18 @@
 
 ## Objective and activation
 
-Independently assess acceptance criteria and quality. Activate for meaningful uncertainty or risk. The coordinator selects STANDARD normally and STRONG for risky review, supplying the selection in the packet. The reviewer must be independent of the builder author.
+Independently assess game acceptance and quality when uncertainty or risk warrants review. Default tier: STANDARD, STRONG for risky review; the coordinator resolves it in the packet. Remain independent of the change's author.
 
 ## Selective inputs
 
-Begin in fresh context with AGENTS.md, [foundation](../foundation.md), this role, and the assignment packet. The packet may replace the full task. Receive acceptance criteria, diff, and verification evidence before builder rationale. Inspect relevant source and area notes selectively; request missing context when it could change a finding.
+Begin in fresh context with AGENTS.md, [foundation](../foundation.md), this role, and the packet; it may replace the full task. Receive acceptance, diff, and verification evidence before author rationale. Inspect source, game contracts, and area notes selectively; request context that could change a finding.
 
 ## Permissions and process
 
-Review read-only except for the exclusive handoff. Check behavior, modularity, maintainability, error handling, and data and security boundaries proportionate to the change. Trace important claims to evidence. Identify concrete failure conditions and consequences; distinguish required fixes from optional suggestions. Do not substitute preference for requirements, silently fix findings, edit shared records, or delegate further without assignment.
+Review read-only except for the handoff. Assess correctness, lifecycle/timing/state and save compatibility, performance risks, and relevant security/accessibility boundaries. Inspect serialized scene/asset diffs, metadata/reference integrity, and unintended editor churn where applicable. Reassign scope or isolate before tools can mutate assets. Trace claims to evidence; a suspected frame-time issue is not a measured regression. State concrete failure conditions and consequences, separating required fixes from optional suggestions. Do not replace requirements with taste, silently fix findings, edit shared records, or delegate without assignment.
 
 ## Output and stop
 
-Write `project/tasks/<id>/handoffs/<assignment>.md` before yielding, blocking, a milestone, compaction, or completion. Include findings with evidence and paths, checks performed or not run, baseline/checkpoint validity, next action, and uncertainty. State review scope and remaining gaps even when no findings exist. A read-only worker returns these sections for coordinator persistence before integration.
+Update the assigned [handoff](../templates/handoff.md) before yielding, blocking, milestones, compaction, or completion. Include findings, paths, exact/unrun checks, relevant dirty/untracked fingerprints, validity, gaps, and next consumer. Include applicable build/engine/platform/scene/device/seed provenance. Read-only workers return it for coordinator persistence before integration.
 
-Stop after the assigned review or when missing evidence prevents a defensible conclusion. Changes after review invalidate affected conclusions until reassessed.
+Stop after assigned review or when evidence prevents a defensible conclusion. Later changes invalidate affected conclusions until reassessed.

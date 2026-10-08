@@ -15,6 +15,12 @@ Audience: coordinator, before delegating. Resolve model aliases and capabilities
 | [Partner](roles/partner.md) | STRONG | Independent questions, options, falsifying checks |
 | [Coordinator](roles/coordinator.md) | STRONG for difficult decisions | Scope, decisions, integration, acceptance |
 | [Curator](roles/curator.md) | FAST for links; STANDARD for synthesis | Verified context repairs and pruning |
+| [Game designer](roles/game-designer.md) | STANDARD; STRONG for ambiguous systems | Player-outcome hypothesis and bounded design experiment |
+| [Content integrator](roles/content-integrator.md) | FAST for mechanical work; STANDARD for integration | Valid referenced/imported content and playable scene assembly |
+| [Performance analyst](roles/performance-analyst.md) | FAST for known captures; STRONG for diagnosis | Comparable measurements and supported bottleneck findings |
+| [Playtester](roles/playtester.md) | STANDARD; FAST for scripted observation | Reproducible player-flow observations and experience feedback |
+
+For game tasks, route with [the game profile](game-development.md). These are optional process boundaries: the builder owns gameplay/engine code, content integrator owns assigned content/scene changes, verifier establishes functional/build results, and playtester observes player experience. Do not activate every role for every slice. Designer advice is a hypothesis until evidence supports it. For shared scenes or assets, choose one writer and let other specialists return findings.
 
 FAST means a smaller, faster model available in this runtime, not a weaker quality contract. Never send ambiguous architecture, security judgments, or risky migrations to FAST solely to save tokens. Alias bindings belong in one project file, not every role. Record the requested tier and actual selection if visible; say unknown when unavailable.
 
@@ -27,6 +33,7 @@ Give a fresh agent only:
 - Task/assignment ID, process role, goal, acceptance criteria, and relevant non-negotiable constraints.
 - Initial sources or source excerpts; facts already verified and remaining questions. Include cross-cutting constraints even if they live outside the requested files.
 - Exact writable files or directories, read scope, owner, and whether tools may mutate outputs.
+- For game work, relevant engine/build/platform, scene or reproduction recipe, input/seed, content dependencies, and agreed resource budgets; include only what the assignment needs.
 - Requested tier, expected output length, and a stopping condition.
 - Assigned handoff path and the next consumer. Include the handoff fields inline if the worker cannot read its template.
 
@@ -44,6 +51,6 @@ Use a fresh context option and tool restrictions only if supported. If the host 
 
 ## Shared workspace and fallbacks
 
-One writer per source file, task file, index, and handoff. Read-only tools may still create caches; make those outputs explicit. Serialize shared lockfiles, generated files, migrations, and build outputs, or isolate them in worktrees. Hand off ownership only after the previous writer has stopped; check the diff before integration.
+One writer per source file, task file, index, and handoff. Read-only tools may still create caches; make those outputs explicit. Serialize shared lockfiles, scenes, asset metadata, import databases, migrations, and build outputs, or isolate their editor projects/output directories. Worktrees alone do not isolate shared engine caches. Hand off ownership only after the previous writer has stopped; check the diff before integration.
 
 No model selection: use the available model and keep tasks small; claim no cost savings. No subagents: perform needed roles sequentially with the same records. No worker filesystem: coordinator persists returned handoffs. No true read-only enforcement: scopes are an instruction contract, not a sandbox. No persistent write access at all: return the checkpoint to the user and clearly identify that persistence is unavailable.

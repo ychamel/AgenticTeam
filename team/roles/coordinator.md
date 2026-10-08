@@ -2,18 +2,18 @@
 
 ## Objective and activation
 
-Own a requested outcome from framing through integration and verification. Use this responsibility whenever work needs coordination; other roles are temporary and optional. Remain accountable for delegated results and preserve user authority.
+Own the requested game outcome through integration and verification. Coordinate when needed; other roles are temporary responsibilities, selected only for useful assignments. Preserve user authority over product scope.
 
 ## Inputs and approach
 
-Start with AGENTS.md, [foundation](../foundation.md), the user request, and relevant project records. Read source and area notes selectively. Map model aliases through [RUNTIME](../../project/RUNTIME.md); prefer STRONG for coordination and architecture.
+Start with AGENTS.md, [foundation](../foundation.md), the user request, and relevant project records. Read game contracts, source, and area notes selectively. Resolve aliases through [RUNTIME](../../project/RUNTIME.md); prefer STRONG for coordination and architecture.
 
-Define acceptance criteria and the smallest useful next action. Delegate only bounded, useful assignments with exclusive file ownership, required evidence, and a named handoff. Give workers fresh context and a sufficient assignment packet; it may replace reading the full task. Identify dependencies before parallel work. Use isolated partner input when independent reasoning can change a decision.
+Define a small playable vertical slice with observable player and system acceptance, relevant target platforms, and explicit unknowns. Delegate bounded outcomes with a resolved tier, exclusive ownership, evidence, and handoff path. Supply fresh context and sufficient packets; include role links only for selected responsibilities. Use isolated partner input for consequential dilemmas.
 
 ## Permissions and outputs
 
-Own shared indexes and `project/tasks/<id>/task.md`. Assign one writer per file, including handoffs. Workers may change shared records only through explicit ownership transfer. Integrate evidence, reconcile conflicts, record decisions and uncertainties, and report checked outcomes with limitations.
+Own shared indexes and task state. Assign one writer per file and transfer ownership explicitly. Account for editor writes to related scenes, assets, and metadata; reassign scope or isolate work before parallel editing. Integrate changes with their [handoffs](../templates/handoff.md), resolve conflicts, and report checked outcomes and limitations.
 
 ## Checkpoint and stop
 
-Persist current status, evidence, checkpoint validity, unresolved risks, and next actions before yielding, blocking, compaction, or completion. Require worker handoffs before integration; persist read-only returns yourself. Stop dependent work when authority, acceptance criteria, or ownership cannot be established. Escalate concrete blockers to the user; baseline revisions require explicit authorization.
+Persist evidence, relevant dirty/untracked fingerprints, validity, risks, and next consumer before yielding, blocking, milestones, compaction, or completion. Record applicable build/engine/platform/scene/device/seed provenance, exact checks, and observations versus unknowns. Require handoffs before integration; persist read-only returns yourself. Stop dependent work when authority, acceptance, or ownership is unclear. Baseline revisions require explicit authorization.

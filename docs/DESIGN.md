@@ -1,6 +1,16 @@
 # Design notes
 
-Baseline: 1.0.0. These are explanations for maintainers, not another layer every agent must read.
+Foundation: 1.0.0. Game profile: 1.0.0. These are explanations for maintainers, not another layer every agent must read.
+
+## Game-development branch
+
+This profile specializes the seven existing processes and adds four optional roles: game designer, content integrator, performance analyst, and playtester. It keeps a single builder for gameplay and engine code; networking, rendering, AI, tools, and other disciplines become bounded assignments as needed, not a permanent agent department per topic.
+
+The profile separates player-outcome hypotheses, implementation, asset/scene integration, measured technical evidence, and observed player experience. A successful compile cannot establish game feel; a good playtest cannot establish save compatibility or a resource budget. Packets identify only the relevant engine/build/platform, scene/input/seed, content dependencies, and acceptance evidence.
+
+Shared scene files, imported metadata, and editor/build outputs add ownership risks. The coordinator assigns those related paths together, serializes edits, or isolates editor projects and outputs. Role boundaries do not imply that two specialists can safely edit one scene concurrently.
+
+Compatibility: the shared foundation, task lifecycle, model aliases, and existing role filenames are preserved. The four specialist guides are loaded only when selected. The small-task path remains available. The profile imposes no engine, genre, multiplayer requirement, or fixed resource budget. This branch request explicitly authorizes the baseline specialization; the foundation itself is unchanged.
 
 ## Design choices
 

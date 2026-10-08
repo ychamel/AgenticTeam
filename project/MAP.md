@@ -10,6 +10,8 @@ Status: uninitialized. Record verified locations and commands; do not guess a st
 
 Create `project/areas/<area>.md` using [the area template](../team/templates/area.md) only when an area needs durable explanation. Small repositories can keep their entire map in this table. Include cross-cutting constraints such as authorization or shared data models.
 
+Map only systems that exist: gameplay/state and input, scenes/levels and UI, animation/audio/VFX, source assets and import settings, engine/rendering/physics integration, save/network contracts, and test/build entry points. Record related asset identifiers and ownership boundaries in the relevant area note; avoid a separate catalog of every asset.
+
 ## Commands
 
 | Purpose | Exact command and working directory | Source / last verified | Relevant scope |
@@ -18,5 +20,8 @@ Create `project/areas/<area>.md` using [the area template](../team/templates/are
 | Format / lint / type checks | Unknown | — | — |
 | Focused tests | Unknown | — | — |
 | Broader integration / build | Unknown | — | — |
+| Editor launch / content import validation | Unknown | — | — |
+| Target-package build / smoke scenario | Unknown | — | — |
+| Reproducible profiling capture / playtest route | Unknown | — | — |
 
 Use commands from manifests, CI, or maintained documentation. Mark unavailable checks explicitly. Runtime/model configuration belongs in [RUNTIME](RUNTIME.md).

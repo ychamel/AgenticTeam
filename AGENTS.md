@@ -1,6 +1,6 @@
 # Agent entry point
 
-This repository uses a layered Markdown workflow. Read selectively; links are routes, not a request to load everything.
+This game-development branch uses a layered Markdown workflow. Read selectively; links are routes, not a request to load everything.
 
 ## Start
 
@@ -13,6 +13,7 @@ This repository uses a layered Markdown workflow. Read selectively; links are ro
 
 | Need | Read |
 | --- | --- |
+| Frame or validate game work | [Game-development profile](team/game-development.md); workers receive relevant constraints in their packets |
 | Delegate, select models, isolate a partner | [Dispatch](team/dispatch.md); coordinator also reads [runtime bindings](project/RUNTIME.md) |
 | Resume, plan, implement, finish | [Workflow](team/workflow.md) and the assigned task |
 | Prune stale context or revise the baseline | [Maintenance](team/maintenance.md) |

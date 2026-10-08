@@ -1,73 +1,59 @@
-# Worked example and acceptance walkthrough
+# Worked game-development example
 
-All projects, paths, outcomes, and commands in this example are fictional. No application tests below were executed in this template repository. The example demonstrates how to use the protocol; do not copy it into active project state.
+This game, paths, outcomes, and checks are fictional. No game engine, target build, profiler, or player session was executed in this template repository. Use this as a routing example, not evidence about an actual game.
 
-## A tiny edit
+## A small tuning change
 
-Request: correct a misleading help message, without changing behavior.
+Request: adjust an existing dash cooldown to an agreed value.
 
-The coordinator reads the root, foundation, project brief, and active work, then the relevant file. It frames the task in one sentence, edits the message, and checks the output or diff. It uses the small path: no spawned agents, decision record, or task directory. Its final response contains the change and validation. If it discovers the message reflects incorrect behavior, it promotes the work before proceeding.
+The coordinator checks the relevant tuning asset and contract, changes the value, and runs the available focused validation. If acceptance includes feel, it needs an observed play check. Optional feel exploration may be an owned follow-up only when outside the task's agreed acceptance. A clear data-only change uses the small path: no task directory or full agent roster. An unexpected save-schema or shared-system impact promotes it before broader edits.
 
-## A consequential change
+## A new playable slice
 
-Request: make an existing CSV export handle large datasets while preserving its public behavior.
+Request: add a directional dash to an existing game without breaking movement, pause, or scene transitions.
 
-The coordinator selects the consequential path because data integrity, resource use, and a public output contract matter. It creates `project/tasks/2026-10-08-bounded-export/task.md`, registers it in WORK, and writes this framing before detailed searches:
+The coordinator opens one task and writes this framing before broad exploration:
 
-- Desired behavior: export completes for the agreed large dataset.
-- Constraints: preserve row order, escaping, authorization, and error behavior.
-- Unknowns: where memory grows and whether the framework supports incremental output.
-- Investigation: trace data access and output buffering; inspect tests and resource limits.
-- Success: compatible output, bounded working memory, and correct cancellation behavior.
+- Player outcome: a deliberate burst of movement with clear start, end, and cooldown feedback.
+- Constraints: preserve current input and movement contracts; respect the game's existing accessibility goals.
+- Unknowns: simulation ownership, collision behavior, and how dash interacts with pause or respawn.
+- Investigation: trace existing movement and input, identify reusable content, and inspect checks.
+- Success: agreed mechanical behavior plus observed interaction/feedback on the specified playable build.
 
-### Delegate evidence gathering
+The engine, target device/input, and resource budgets come from BRIEF. This example invents no engine command or universal FPS target.
 
-Illustrative scout packet:
+## Choose useful workers
 
-```text
-Task: 2026-10-08-bounded-export / scout-01
-Role: scout; requested tier FAST; actual model resolved from RUNTIME
-Goal: locate buffering and existing export contracts, not choose the architecture
-Acceptance: source-backed answer, test entry points, remaining unknowns
-Read first: AGENTS, foundation, scout role; relevant MAP excerpt below
-Constraints: preserve authorization, CSV escaping, row order, failure behavior
-Start sources: src/export.py and its callers; expand to relevant dependencies
-Write only: project/tasks/2026-10-08-bounded-export/handoffs/scout-01.md
-Stop: answer established, evidence conflicts, or two targeted search passes exhausted
-Return: <=250 words plus source pointers; current handoff fields
-Consumer: coordinator deciding the implementation boundary
-```
+A FAST scout locates code, scenes, relevant assets, and existing tests. Its packet names the question, initial sources, exact handoff path, read-only source scope, and stopping condition. It returns source-backed facts and unknowns instead of a complete source dump.
 
-The scout identifies an eager row list and a second full output buffer. It points to the symbols and existing tests, labels the resource-limit assumption as unknown, saves its handoff, and returns a short summary. The coordinator checks the decisive source locations. It does not ingest the scout's whole search transcript.
+A game designer can define the small experiment if player behavior is still ambiguous: activation, cancellation, cooldown, failure feedback, and observations that would reject the design. This is an explicit behavior proposal, not permission to add unrelated progression or networking systems.
 
-### Consult a fresh partner
+If the change reaches shared simulation timing, the coordinator uses the consequential path. A fresh STRONG partner receives the foundation and partner role inline, plus this neutral dilemma:
 
-The coordinator independently sends a STRONG partner the foundation and partner role inline, with this neutral problem:
+> A short player movement ability must interact predictably with pause, collisions, and input changes. What contracts should be established before selecting its timing and state model? Offer up to three questions, two alternatives, and checks that could rule each out. Use only these facts; do not inspect the project.
 
-> A service produces ordered tabular downloads. Input volume is growing; the output contract and access checks must remain compatible. What should we establish before selecting an approach to memory usage? Offer questions, at most two options, and checks that could rule them out. Do not read the repository or use tools.
+The coordinator saves the read-only return before using it, answers neutral questions within the exchange limit, and records a short evidence-based decision. Advice is checked against the actual engine integration and gameplay contract.
 
-The partner asks when response headers become irrevocable, whether data access is itself bounded, and how cancellation releases resources. It compares incremental output with background materialization. These are hypotheses, not code findings. The coordinator answers only the relevant neutral facts and concludes the exchange within two rounds.
+## Implement with explicit ownership
 
-The coordinator first persists the partner's read-only return. The task's decision brief then chooses incremental output based on source evidence, identifies partial-response failure as the main tradeoff, and states a revisit trigger if the storage layer cannot read incrementally. If this becomes a lasting public contract, a separate accepted decision records it.
+Builder `builder-01` owns the assigned movement code and tests. A content integrator is useful only if new animation, audio, VFX, UI, or scene wiring is needed. It receives its own content paths together with associated metadata and import settings. If both need the same player scene, one writes it after the other stops; they do not save concurrently. Unexpected editor-generated changes require scope reconciliation.
 
-### Build and integrate
+Handoffs identify applied versus verified changes and the actual source/content fingerprints. They include relevant engine version, build/platform, scene/scenario, input, and seed when applicable. Missing editor access stays explicit; text edits cannot prove import success.
 
-Builder `builder-01` receives exclusive ownership of the affected implementation and test files. Once it stops editing and saves a `ready` handoff, a FAST verifier runs known commands, such as `python -m pytest tests/test_export.py`, from the project root. It records the actual exit result, timestamp, checked revision plus relevant dirty/untracked content fingerprints, and scope gaps. Memory characterization may need a separate measured check; passing compatibility tests alone proves no memory bound.
+## Collect distinct evidence
 
-A STRONG reviewer receives acceptance criteria, the diff, and check evidence before the builder's rationale. It inspects resource release and partial-response handling. The coordinator resolves supported findings and checks the integrated result; any intervening edit invalidates affected earlier checks. Only the coordinator marks assignments `integrated`.
+The verifier executes available movement/state checks, scene/import validation, and the required target-build smoke scenario. It records exact commands or editor steps, checked content/build identity, results, and gaps. A local editor run does not pass a required packaged-build check.
 
-## An interrupted builder
+The playtester runs the agreed player scenario on an identified build and input device. It reports reproduction steps, actual versus expected behavior, and observations such as missed feedback or accidental reactivation, separating these from subjective suggestions. If no executable build, interaction tool, or human observation is available, player acceptance stays unverified. Reviewing code or screenshots does not become a claim of having played.
 
-Suppose the builder's handoff describes planned work, but its source edit landed before the session stopped. On resume, the coordinator checks the working tree and existing files before replaying anything. It confirms the previous writer stopped, records the partial change as applied but unverified, and assigns `builder-02` a different handoff. The original record remains available. If the old writer's state is unknown, work resumes in isolation instead of racing the writer.
+A performance analyst joins only if an agreed budget is affected or a measured problem appears. It compares reproducible before/after captures on equivalent build/device/settings and scenarios; the builder implements any resulting optimization under a separate edit assignment. The analyst does not infer gains from code complexity alone.
 
-If the completed scout handoff exists but its index update is missing, recovery finds it through the task directory and reconciles it. A missing index row or missing handoff never proves the source tree is clean.
+For consequential work, an independent reviewer inspects the integrated code/content change, evidence, lifecycle behavior, and missing cases before seeing the builder's rationale. The coordinator resolves findings and reruns affected checks. A simpler feature can use fewer roles.
 
-## Closeout and drift
+## Interrupted work and closeout
 
-After acceptance and integration, the coordinator updates the export area's contract and its accepted decision link. It transfers any unresolved unrelated issue to WORK with a next action, then archives the whole closed task directory and repairs links. Active indexes contain no running narrative of completed work.
+If a builder stops after applying code but before saving its handoff, the successor inspects actual files and confirms the previous writer stopped. A new attempt gets a new handoff ID. Previously passing checks are stale when relevant code, content, or settings change. No step replays an import or scene edit merely because an old plan lists it.
 
-If a later change makes the documented command obsolete, the next affected task repairs it from manifest or CI evidence. After five standard/consequential completions, a curator checks the implicated context and resets the maintenance counter. It does not rewrite the foundation as part of pruning.
+The task closes when its agreed acceptance evidence exists. Required target-device or play evidence cannot be replaced by confidence; record the blocker and next owner. On completion, update the relevant area contract and lasting decisions, transfer unresolved work, and archive the whole task with repaired links. The curator later checks drift in engine/import recipes, asset references, and affected profiling/play evidence.
 
-## Missing host features
-
-With no model selection, the same packets use the available model and claim no savings. With no subagents, the coordinator runs the needed responsibilities sequentially. With no fresh conversation, the partner step becomes an explicitly labeled alternative-analysis self-check. With no worker write access, the coordinator saves its return. If no persistent writes are possible at all, the final response carries the checkpoint and discloses the missing persistence.
+Without subagents, perform these responsibilities sequentially and label self-review honestly. Without model selection, use the available model and claim no cost savings. Keep the same durable records wherever persistent writes are supported.

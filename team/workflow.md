@@ -2,6 +2,8 @@
 
 Audience: coordinator. Workers follow their packet and role; the coordinator carries this process.
 
+For game tasks, read [the game profile](game-development.md) and pass applicable constraints to each assignment. Keep subjective design hypotheses separate from functional, content, performance, and observed-play evidence.
+
 ## 1. Frame before exploring
 
 State the desired behavior, constraints, unknowns, and a success check in at most five bullets. For an unfamiliar problem, first choose an investigation strategy: what evidence would distinguish likely causes or approaches? Do this before broad searches. A tiny task needs one sentence, not a planning document.
@@ -13,6 +15,8 @@ Choose the lightest path based on uncertainty and impact, not line count:
 | Small | Clear, reversible, local; no meaningful unresolved design | Coordinator can implement and check directly. Final response is the handoff; update existing project facts only if they changed. |
 | Standard | Multiple steps, delegation, uncertainty, or likely resumption | One task record; only needed process roles; persisted handoffs. |
 | Consequential | Architecture, public contracts, security boundaries, migrations, or difficult rollback | Standard path plus context-isolated partner, independent review, and explicit failure/rollback checks. |
+
+In games, consequential scope can include save formats, shared simulation timing, networking authority, or wide scene/content migrations. A small tuning change is not automatically consequential; judge its effect on the actual game contract.
 
 Promote a small task to standard before delegating, suspending with unfinished changes, or discovering significant uncertainty. If the runtime lacks independent agents, use the documented fallback and state the review limitation.
 
@@ -35,6 +39,8 @@ Record a short decision brief: evidence, plausible alternatives, chosen approach
 ## 4. Build, verify, review
 
 Assign disjoint file ownership or serialize overlapping changes. Builders update their handoffs at meaningful milestones. Verify behavior against acceptance criteria, including relevant failure paths. Tests or builds that mutate shared outputs must run serially or in isolated directories.
+
+For a playable slice, verify its relevant code and content together. Select scene/import checks, gameplay scenarios, target-build smoke tests, performance measurements, or playtests according to acceptance. Record unavailable engine/device/human-play access explicitly and keep dependent criteria open. Save/import operations must respect related-file ownership.
 
 Use an independent reviewer for consequential changes and for standard changes when it adds confidence. Give them acceptance criteria, the diff, and evidence before the builder's rationale. Resolve findings against evidence, then rerun only affected checks. The coordinator inspects the combined change and verifies interfaces across assignments; worker success does not prove integration.
 

@@ -27,6 +27,8 @@ For later work arising from an archived task, create a new active task linking b
 
 Search targeted records for broken links, duplicate rules, obsolete commands, accepted decisions missing from area context, stale ownership, unintegrated handoffs, and active items with no next step. Review only the implicated sources. Deduplicate by choosing a canonical home and replacing other copies with links. Keep the reason for constraints that prevent repeated mistakes.
 
+For game projects, recheck affected engine/plugin versions, import/build recipes, renamed scene or asset references, save/network contracts, and profiling/playtest evidence after relevant changes. Keep design hypotheses visibly unverified until observed evidence supports them; do not preserve obsolete tuning conclusions as permanent rules.
+
 Archive superseded decisions while retaining their status and replacement pointer in [DECISIONS](../project/DECISIONS.md). Accepted decisions remain addressable for as long as they constrain work. Archives are searchable by task ID or topic on demand and excluded from default reads; do not maintain a second narrative archive index.
 
 Delete disposable logs, abandoned scratch notes, and duplicate summaries only after confirming no needed evidence or unresolved obligation lives there. Do not silently delete historical decision records or task outcomes; storage is cheaper than rediscovery. Without recoverable version history, retain original records while pruning active summaries. Report what changed, what evidence was checked, and what remains uncertain in the current task handoff; do not create an unbounded maintenance journal.
